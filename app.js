@@ -17,6 +17,13 @@ for(let i=0;i<lista_amigos.length;i++){
     ul_amigos.appendChild(li_amigo);
 
 }
+}
 
+function sortearAmigo(){
+    let texto_resultado=document.querySelector("#resultado");
+let numero_resultado=Math.floor(Math.random()*lista_amigos.length);
+let amigo_elegido=lista_amigos[numero_resultado];
+
+  texto_resultado.innerHTML="El amigo elegido es "+amigo_elegido;
 
 }
